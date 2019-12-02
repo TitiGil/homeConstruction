@@ -1,273 +1,449 @@
         html,
-        body {
-            margin: 0%;
-            padding: 0%;
-            scroll-behavior: smooth;
-            width: 100%;
-            overflow-x: hidden;
-        }
+    body {
+        margin: 0%;
+        padding: 0%;
+        scroll-behavior: smooth;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
         
-        body {
-            background-color: rgb(204, 204, 204);
-        }
+        background-color: rgb(255, 254, 254);
+
+   }
+    
+    @font-face {
+        font-family: shabnam;
+        src: url("../font/titr.ttf");
+    }
+    
+    @font-face {
+        font-family: naz;
+        src:url("../font/Vazir.woff") ;
+     
+     
+      }
+    @font-face{
+        font-family:num;
+        src:url("/font/num.woff");
+    }
+    .header {
+        box-sizing: border-box;
+        height: 75px;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(36, 36, 36);
+        z-index: 100;
+        border-bottom: 5px solid rgba(42, 210, 252, 0.5);
+        color: white;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    
+    .header .navbar {
+        height: 100%;
+        margin-left: 5%;
+        position: relative;
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .header .navbar-nav {
+        height: 100%;
+    }
+    
+    .header .nav-item {
+        text-align: center;
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100px;
+        cursor: pointer;
+        transition: background-color 1s;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -ms-transition: background-color 1s;
+        -o-transition: background-color 1s;
+    }
+    
+    .header .nav-link.active {
+        background-color: rgba(14, 184, 226, 0.753);
+    }
+    
+    .header .nav-link {
+        padding-top: 20%;
+        position: relative;
+        height: 100%;
+    }
+    
+    .header .logo {
+        position: relative;
+        margin-right: 0px;
+        height: 75px;
+        width: auto;
+    }
+    
+    .bod {
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+        top: 75px;
+        padding-top: 75px;
+        background-image: url("../img/back.jpg");
+        background-clip: border-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+     
+    }
+    .bod *{
+        font-family: shabnam;
+        color:  linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,0,1) 100%); /* w3c */
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 0 -1px 20px #FFF, 0 -2px 10px rgb(204, 204, 17),  0px 10px 40px rgb(10, 10, 10); 
+        line-height: 150%;
+    }
+    #sv1 {
+        position: relative;
+        top: 100%;
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+    
+    .links {
+        height: auto;
+        margin: 3%;
+        margin-top: 3%;
+    }
+    
+    .col {
+        margin-bottom: 20px;
+    }
+ 
+    .card-header *{
+        background:transparent;
+        font-family: naz;
+        font-weight: bolder;
+    }
+
+
+    
+    .navbar * {
+        font-family: shabnam;
+    }
+    
+    .card-body {
+        text-align: center;
+       
+
+    }
+    
+    .card-body img {
+        position: relative;
+        height: inherit;
+        width: 100%;
+        padding: 0;
+        margin: 0;
         
-        @font-face {
-            font-family: shabnam;
-            src: url("../font/Sahel.woff");
-        }
+    }
+    
+    .card-footer {
+        font-family: naz;
+    }
+    .card-footer .btnn{
+        font-family: shabnam;
+        background: -moz-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,0,1) 50%, rgba(255,255,0,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(50%, rgba(0,128,0,1)), color-stop(100%, rgba(255,255,0,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,0,1) 50%, rgba(255,255,0,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,0,1) 50%, rgba(255,255,0,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,0,1) 50%, rgba(255,255,0,1) 100%); /* ie10+ */
+        background: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,0,1) 50%, rgba(255,255,0,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFF00', endColorstr='#FFFF00',GradientType=1 ); /* ie6-9 */ 
+      
+    }
+    
+    .card-footer span , .job .jobmod {
+        display: block;
+        direction: rtl;
+        text-align: justify;
+        line-height: 160%;
+       
+        font-size: 15px;
         
-        @font-face {
-            font-family: naz;
-            src: url("../font/naz.ttf")
-        }
+    }
+    
+    .sep {
+        position: relative;
+        content: "";
+        width: 98%;
+        height: 1px;
+        background-color: rgba(136, 136, 136, 0.75);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .card-footer a {
+        text-decoration: none;
+        color: black;
+    }
+ 
+    .card {
+        height: 100%;
+        margin-bottom: 5%;
+        -webkit-box-shadow: 0px 17px 12px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 17px 12px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 17px 12px 1px rgba(0, 0, 0, 0.75);
+    }
+    
+    .aboutUs  {
+    
+        direction: rtl;
+        font-family: naz;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 35px;
+        width: 100%;
+        padding: 5%;
+        /* border-top: 3px solid rgba(136, 136, 136, 0.75);
+        border-bottom: 3px solid rgba(136, 136, 136, 0.75);
+        */margin-top: 10%; 
+        margin-bottom: 0%;
+        padding-top: 75px;
+    }
+    
+    .contactUs {
+        margin: 0%;
+        background-color: rgb(1, 2, 36);
+        direction: rtl;
+        font-family: naz;;
+        text-align: right;
+        color: azure;
+        padding: 5%;
+        padding-top: 75px;
+        line-height: 35px;
+    }
+    #constructor{
+        opacity: 0;
+    }
+    .number{
+        text-align: left;
+    }
+    .number a {
+        font-family: num;
+        text-align: left;
+        padding-left: 10px;
+        color:white;
         
-        @font-face {
-            font-family: digit;
-            src: url("../font/digit.woff");
-        }
+    }
+    
+    .colnav {
+        direction: rtl;
+        color:white;
+        height: 150px;
+        top: -100px;
+        position: fixed;
+        width: 100%;
+        z-index: 98;
+        background-color: rgb(36, 36, 36);
+        transition: top 2s ease-in-out;                ;
+        -webkit-transition: top 750ms ease-in-out                ;
+        -moz-transition: top 750ms ease-in-out                ;
+        -ms-transition: top 750ms ease-in-out                ;
+        -o-transition: top 750ms ease-in-out                ;
+}
+.colnav  .navbar-nav{ 
+    width: 100%;
+
+
+}
+.colnav .nav-item{
+   height: 40px;;
+    
+}
+.colnav a{
+    color:white;
+    text-align: right;
+
+}
+    
+    .colbut {
+        display: none;
+        border: none;
+        margin-top: 3px;
+    }
+    
+    .colbut span {
+        color: white;
+        font-size:20px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        ;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px padding5px;
         
-        .header {
-            box-sizing: border-box;
-            height: 75px;
-            width: 100%;
-            position: fixed;
-            background-color: rgb(36, 36, 36);
-            z-index: 100;
-            border-bottom: 5px solid rgba(42, 210, 252, 0.5);
-            color: white;
-            margin-right: 0px;
-            padding: 0px;
-        }
         
-        .header .navbar {
-            height: 100%;
-            margin-left: 5%;
-            position: relative;
-            bottom: 0px;
-            margin-bottom: 0px;
-            padding: 0px;
-        }
-        
-        .header .navbar-nav {
-            height: 100%;
-        }
-        
-        .header .nav-item {
-            text-align: center;
-            bottom: 0px;
-            margin-bottom: 0px;
-            padding: 0px;
-            height: 100%;
-            width: 100px;
-            cursor: pointer;
-            transition: background-color 1s;
-            -webkit-transition: background-color 1s;
-            -moz-transition: background-color 1s;
-            -ms-transition: background-color 1s;
-            -o-transition: background-color 1s;
-        }
-        
-        .header .nav-link.active {
-            background-color: rgba(42, 210, 252, 0.5);
-        }
-        
-        .header .nav-link {
-            padding-top: 20%;
-            position: relative;
-            height: 100%;
-        }
-        
-        .header .logo {
-            position: relative;
-            margin-right: 0px;
-            height: 75px;
-            width: auto;
-        }
-        
-        .bod {
-            position: relative;
-            width: 100%;
-            min-height: 400px;
-            top: 75px;
-            padding-top: 75px;
-            background-image: url("../img/back.jpg");
-            background-clip: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        
-        #sv1 {
-            position: relative;
-            top: 100%;
-            width: 100%;
-            height: 200px;
-            display: block;
-        }
-        
-        .links {
-            height: auto;
-            margin: 3%;
-            margin-top: 3%;
-        }
-        
-        .col {
-            margin-bottom: 20px;
-        }
-        
-        .card-header,
-        .navbar * {
-            font-family: shabnam;
-        }
-        
-        .card-body {
-            text-align: center;
-        }
-        
-        .card-body img {
-            position: relative;
-            height: inherit;
-            width: 100%;
-        }
-        
-        .card-footer {
-            font-family: naz;
-        }
-        
-        .card-footer span {
-            display: block;
-            direction: rtl;
-            text-align: justify;
-            line-height: 160%;
-            margin: 10px 0px 10px 0px;
-        }
-        
-        .sep {
-            position: relative;
-            content: "";
-            width: 98%;
-            height: 1px;
-            background-color: rgba(136, 136, 136, 0.75);
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .card-footer a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .card {
-            height: 100%;
-            margin-bottom: 5%;
-            -webkit-box-shadow: 0px 17px 22px 1px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 17px 22px 1px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 17px 22px 1px rgba(0, 0, 0, 0.75);
-        }
-        
-        .aboutUs {
-            direction: rtl;
-            font-family: naz;
-            font-size: 20px;
-            text-align: justify;
-            line-height: 35px;
-            width: 100%;
-            padding: 5%;
-            border-top: 3px solid rgba(136, 136, 136, 0.75);
-            border-bottom: 3px solid rgba(136, 136, 136, 0.75);
-            margin-top: 10%;
-            margin-bottom: 0%;
-            padding-top: 75px;
-        }
-        
-        .contactUs {
-            margin: 0%;
-            background-color: rgb(1, 2, 36);
-            direction: rtl;
-            font-family: shabnam;
-            text-align: right;
-            color: azure;
-            padding: 5%;
-            padding-top: 75px;
-            line-height: 35px;
-        }
-        
-        .number {
-            text-align: left;
-            padding-left: 10px;
-        }
-        
-        .colnav {
-            top: -100%;
-            position: fixed;
-            width: 100%;
-            z-index: 99;
-            background-color: rgb(36, 36, 36);
-        }
-        
-        .colbut {
-            display: none;
-        }
-        
-        footer {
-            direction: rtl;
-            background-color: black;
-            color: white;
-            border-top: 1px solid rgba(255, 255, 255, 0.5);
-            padding: 25px;
-            text-align: right;
-        }
-        
-        .sticker {
-            font-family: shabnam;
-            display: inline-block;
-            border: 1px solid white;
-            margin: 2px;
-            padding: 2px;
-        }
-        
-        .sticker p {
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        .number {
-            font-family: digit;
-            color: white;
-        }
+    }
+    
+    footer {
+        direction: rtl;
+        background-color: black;
+        color: white;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 25px;
+        text-align: right;
+    }
+    footer a{
+        font-family: naz;
+        text-decoration: none;
+        color: white;
+
+    }
+    
+    .sticker {
+        font-family: naz;
+        display: inline-block;
+           margin: 2px;
+        font-size: 10px;
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.5);
+     
+    }
+    
+    .sticker h6 {
+        padding: 0px;
+        margin: 0px;
+       
+    }
+    
+  
         
         @media only screen and (max-width:576px) {
-            .header .nav-item.active {
-                background-color: none;
-                border-bottom: none;
-            }
-            .colbut {
-                display: inline-block;
-            }
-            #horinav {
-                display: none;
-            }
-            .header {
-                height: 50px;
-            }
-            .header .logo {
-                height: 50px;
-            }
-            .bod {
-                top: 50px;
-                ;
-            }
+        .header .nav-item.active {
+            background-color: none;
+            border-bottom: none;
+        }
+        .colbut {
+            display: inline-block;
+        }
+        #horinav {
+            display: none;
+        }
+        .header {
+            height: 50px;
+        }
+        .header .logo {
+            height: 50px;
+        }
+        .bod {
+            top: 50px;
+          
+            
+        }
+  
+    }
+    
+    @media only screen and (max-width:768px) {
+        .card {
+            height: auto;
+            
         }
         
-        @media only screen and (max-width:768px) {
-            .card {
-                height: auto;
-            }
+
+        .bod *{
+            text-align: center;
+           
+            font-size: 1.1em;
+            
         }
-        
-        .map {
-            position: relative;
-            text-align: right;
-            height: 300px;
-            width: 100%;
+        .aboutUs{
+            font-size: 15px;
+            
         }
+    }
+    
+    .map {
+        display: none;
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 100%;
+    }
+    
+    .location * {
+        font-family: shabnam;
+    }
+
+    .job *{
+        font-family: shabnam;
+    }
+
+    @-webkit-keyframes rollIn {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+          transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        }
+      
+        to {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      
+      @keyframes rollIn {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+          transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        }
+      
+        to {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      #constructor.animate{
+          
+       animation-name: rollIn;
+       animation-duration: 1s;
+       animation-fill-mode: forwards;
+       animation-play-state: running;
+       animation-timing-function: ease-in-out;
+}   
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-play-state: running;
+}
+#text{
+    opacity :0;
+}
+#text.animate{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+

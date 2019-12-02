@@ -1,0 +1,242 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+.container {
+    text-align: center;
+}
+
+.location {
+    height: 50px;
+    direction: rtl;
+    color: white;
+    text-align: right;
+    vertical-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.location span {
+    font-size:13px;
+}
+
+.breadcrumb {
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.construction {
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    
+    align-content: center;
+}
+
+#repair>p{
+    font-family: vazir;
+    direction: rtl;
+    text-align: justify;
+    color: black;
+    font-size: 15px;
+    padding: 5%;
+    padding-bottom:10px;
+    margin-bottom:5%;
+   line-height: 30px;
+}
+.job {
+    background: white;
+    direction: rtl;
+
+    position: relative;
+    margin: 20px 0 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.job img{
+    width: 200px;
+    height: 200px;
+    
+}
+.jobimg{
+padding: 5px;
+text-align: right;
+
+}
+.jobmod{
+  
+    padding: 5%;
+    font-family: vazir;
+    line-height: 35px;
+    vertical-align: center;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url("../font/Vazir.woff");
+   font-weight: 50;
+ 
+  }
+  .carousel-caption{
+      
+      font-family: vazir;
+      text-shadow: 3px 3px 3px black;
+     
+  }
+#build{
+    padding-top: 75px;
+}
+
+#callnow{
+    z-index: 101;
+    position: fixed;
+    
+    bottom: 150px;
+}
+body{
+    position: relative;
+}
+
+#callnow img{
+    animation:viber 1.5s  ease-in-out alternate infinite;
+    -webkit-animation:viber 1.5s  ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes viber{
+  
+    
+    30%{
+            transform: rotate(-10deg)    ;
+            -webkit-transform: rotate(-10deg)    ;
+            -moz-transform: rotate(-10deg)    ;
+            -ms-transform: rotate(-10deg)    ;
+            -o-transform: rotate(-10deg)    ;
+}
+    50%{
+        
+            transform: rotate(20deg)    ;
+            -webkit-transform: rotate(20deg)    ;
+            -moz-transform: rotate(20deg)    ;
+            -ms-transform: rotate(20deg)    ;
+            -o-transform: rotate(20deg)    ;
+
+    }
+    70%{
+            transform: rotate(-10deg)    ;
+            -webkit-transform: rotate(-10deg)    ;
+            -moz-transform: rotate(-10deg)    ;
+            -ms-transform: rotate(-10deg)    ;
+            -o-transform: rotate(-10deg)    ;
+}
+    90%{
+        transform: scale(1.1)    ;
+        -webkit-transform: scale(1.1)    ;
+        -moz-transform: scale(1.1)    ;
+        -ms-transform: scale(1.1)    ;
+        -o-transform: scale(1.1)    ;
+}
+100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+}
+
+@keyframes viber{
+    10%{
+        transform: rotate(10deg)    ;
+        -webkit-transform: rotate(10deg)    ;
+        -moz-transform: rotate(10deg)    ;
+        -ms-transform: rotate(10deg)    ;
+        -o-transform: rotate(10deg)    ;
+}
+    
+    30%{
+        
+            transform: rotate(-20deg)    ;
+            -webkit-transform: rotate(-20deg)    ;
+            -moz-transform: rotate(-20deg)    ;
+            -ms-transform: rotate(-20deg)    ;
+            -o-transform: rotate(-20deg)    ;
+
+    }
+    50%{
+        
+            transform: rotate(20deg)    ;
+            -webkit-transform: rotate(20deg)    ;
+            -moz-transform: rotate(20deg)    ;
+            -ms-transform: rotate(20deg)    ;
+            -o-transform: rotate(20deg)    ;
+
+    }
+    70%{
+            transform: rotate(-10deg)    ;
+            -webkit-transform: rotate(-10deg)    ;
+            -moz-transform: rotate(-10deg)    ;
+            -ms-transform: rotate(-10deg)    ;
+            -o-transform: rotate(-10deg)    ;
+}
+    90%{
+        transform: scale(1.1)    ;
+        -webkit-transform: scale(1.1)    ;
+        -moz-transform: scale(1.1)    ;
+        -ms-transform: scale(1.1)    ;
+        -o-transform: scale(1.1)    ;
+}
+100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+}
+.modal-content *{
+    font-family: vazir;
+    color:white;
+    line-height: 25px;
+ 
+}
+.modal-content{
+    text-align: right;
+    padding: 5%;
+    background: -moz-linear-gradient(53deg, rgba(0,8,255,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,8,255,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(53deg, rgba(0,8,255,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(53deg, rgba(0,8,255,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(53deg, rgba(0,8,255,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(37deg, rgba(0,8,255,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#0008FF',GradientType=0 ); /* ie6-9 */ 
+}
+ 
+@media only screen and (max-width:576px) {
+    .location span {
+        font-size:11px;
+    }
+    
+    .breadcrumb {
+        font-size: 11px;
+    }
+}
